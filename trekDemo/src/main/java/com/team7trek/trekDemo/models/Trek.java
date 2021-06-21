@@ -24,18 +24,21 @@ public class Trek {
     return id;
 }
     public Trek() {
-
     }
-    public Trek(String image,String title, String difficulty, String description, Continent continent, String review, Region...regions) {
+    public Trek(String title, String difficulty, String description, String review, String image, Continent continent, Region regions) {
         this.title = title;
-        this.description = description;
         this.difficulty = difficulty;
-        this.continent = continent;
+        this.description = description;
         this.review = review;
         this.image = image;
-        this.regions = new ArrayList<>(Arrays.asList(regions));
+        this.continent = continent;
+        this.region = regions;
     }
 
+
+    public Region getRegions(){
+        return region;
+    }
     public String getTitle() {
         return title;
     }
@@ -44,17 +47,9 @@ public class Trek {
         return difficulty;
     }
 
-    @Lob
     public String getDescription() {
         return description;
     }
-    @Lob
-
-
-    public String getDescription() {
-        return description;
-    }
-
 
     public String getReview() {
         return review;
@@ -68,24 +63,7 @@ public class Trek {
         return continent;
     }
 
-    public Region getRegions(){
-        return region;
-    }
-    public Trek() {}
-    public Trek(String title, String difficulty, String description, String review, String image, Continent continent, Region regions) {
-        this.title = title;
-        this.difficulty = difficulty;
-        this.description = description;
-        this.review = review;
-        this.image = image;
-        this.continent = continent;
-        this.region = regions;
-    }
 
-
-    public Collection<Region> getRegions() {
-        return regions;
-    }
 
 
     @Override

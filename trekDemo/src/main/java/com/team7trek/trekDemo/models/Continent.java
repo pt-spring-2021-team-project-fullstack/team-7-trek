@@ -27,28 +27,10 @@ public class Continent {
         return id;
     }
 
-    public String getLocation() {
-        return location;
-    }
     public Collection<Region> getRegions() {
         return regions;
     }
-    public String getTitle() {
-        return title;
-    }
-    public String getImage() {
-        return image;
-    }
 
-
-    public Continent() {}
-
-
-    public Continent(String location,String image,String title) {
-        this.title = title;
-        this.image = image;
-        this.location = location;
-    }
 
     public String getLocation() {
         return location;
@@ -62,9 +44,7 @@ public class Continent {
         return image;
     }
 
-    public Collection<Trek> getTreks() {
-        return treks;
-    }
+
 
 
     @Override
