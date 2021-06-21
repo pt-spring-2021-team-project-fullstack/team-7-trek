@@ -1,5 +1,9 @@
 package com.team7trek.trekDemo.controllers;
 
+import com.team7trek.trekDemo.models.Continent;
+import com.team7trek.trekDemo.repositories.ContinentRepository;
+
+
 
 import com.team7trek.trekDemo.models.Continent;
 import com.team7trek.trekDemo.repositories.ContinentRepository;
@@ -25,6 +29,7 @@ public class ContinentController {
     public String displaySingleContinent(@PathVariable String location, Model model){
         Continent retrievedContinent = continentRepo.findContinentByLocation(location);
         model.addAttribute("continent",retrievedContinent);
+
         return "continentView";
     }
 }

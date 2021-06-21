@@ -1,6 +1,5 @@
 package com.team7trek.trekDemo;
 
-
 import com.team7trek.trekDemo.models.Continent;
 import com.team7trek.trekDemo.repositories.ContinentRepository;
 import com.team7trek.trekDemo.repositories.RegionRepository;
@@ -18,7 +17,13 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
 @ExtendWith(SpringExtension.class)
+
+
+
+@ExtendWith(SpringExtension.class)
+
 @WebMvcTest
 public class WebLayerTest {
     @MockBean
@@ -46,7 +51,6 @@ public class WebLayerTest {
                 .andExpect(view().name("regionsView"))
                 .andExpect(model().attributeExists("regions"));
 
-
     }
     @Test
     public void treksShouldBeOkAndReturnTreksViewWithTreksModelAttribute() throws Exception {
@@ -56,11 +60,18 @@ public class WebLayerTest {
                 .andExpect(view().name("treksView"))
                 .andExpect(model().attributeExists("treks"));
 
+    }
+    @Test
+    public void shouldBeOkForASingleContinentEndPointWithContinentViewAndContinentModelAttribute() throws Exception {
+        Continent testContinent = new Continent("Africa","title","image");
+
+
 
     }
     @Test
     public void shouldBeOkForASingleContinentEndPointWithContinentViewAndContinentModelAttribute() throws Exception {
         Continent testContinent = new Continent("Africa","image","title");
+
         when(continentRepo.findContinentByLocation("Africa")).thenReturn(testContinent);
         mockMvc.perform(get("/continents/Africa"))
                 .andExpect(status().isOk())

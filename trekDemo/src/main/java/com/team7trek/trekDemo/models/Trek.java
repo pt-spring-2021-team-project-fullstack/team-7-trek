@@ -8,7 +8,6 @@ import java.util.Objects;
 
 @Entity
 public class Trek {
-
     @Id
     @GeneratedValue
     private Long id;
@@ -19,9 +18,8 @@ public class Trek {
     private String image;
     @ManyToOne
     private Continent continent;
-    @ManyToMany
-    private Collection<Region> regions;
-
+    @ManyToOne
+    private Region region;
     public Long getId() {
     return id;
 }
@@ -46,9 +44,17 @@ public class Trek {
         return difficulty;
     }
 
+    @Lob
     public String getDescription() {
         return description;
     }
+    @Lob
+
+
+    public String getDescription() {
+        return description;
+    }
+
 
     public String getReview() {
         return review;
@@ -62,9 +68,25 @@ public class Trek {
         return continent;
     }
 
+    public Region getRegions(){
+        return region;
+    }
+    public Trek() {}
+    public Trek(String title, String difficulty, String description, String review, String image, Continent continent, Region regions) {
+        this.title = title;
+        this.difficulty = difficulty;
+        this.description = description;
+        this.review = review;
+        this.image = image;
+        this.continent = continent;
+        this.region = regions;
+    }
+
+
     public Collection<Region> getRegions() {
         return regions;
     }
+
 
     @Override
     public boolean equals(Object o) {
