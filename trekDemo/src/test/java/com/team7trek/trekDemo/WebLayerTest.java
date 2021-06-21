@@ -18,12 +18,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
+
+
+
+
 @ExtendWith(SpringExtension.class)
-
-
-
-@ExtendWith(SpringExtension.class)
-
 @WebMvcTest
 public class WebLayerTest {
     @MockBean
@@ -64,18 +63,13 @@ public class WebLayerTest {
     @Test
     public void shouldBeOkForASingleContinentEndPointWithContinentViewAndContinentModelAttribute() throws Exception {
         Continent testContinent = new Continent("Africa","title","image");
-
-
-
-    }
-    @Test
-    public void shouldBeOkForASingleContinentEndPointWithContinentViewAndContinentModelAttribute() throws Exception {
-        Continent testContinent = new Continent("Africa","image","title");
-
         when(continentRepo.findContinentByLocation("Africa")).thenReturn(testContinent);
         mockMvc.perform(get("/continents/Africa"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("continentView"))
                 .andExpect(model().attributeExists("continent"));
+
+
     }
+
 }

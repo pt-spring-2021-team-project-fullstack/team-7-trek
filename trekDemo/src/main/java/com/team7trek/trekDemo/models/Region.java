@@ -35,9 +35,7 @@ public class Region {
 
     private String image;
     private String title;
-    public Region () {
 
-    }
 
 
     public Long getId() {
@@ -54,26 +52,17 @@ public class Region {
     public Continent getContinent() {
         return continent;
 }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Region region = (Region) o;
         return Objects.equals(id, region.id);
-
-
-    public String getImage() {
-        return image;
     }
 
-    public String getTitle() {
-        return title;
-
-    }
-
-    public Region(String climate, String image, String title) {
-        this.climate = climate;
-        this.image = image;
-        this.title = title;
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
