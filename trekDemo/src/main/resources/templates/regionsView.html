@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title>Regions</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<h1>Regions</h1>
-</body>
-</html>
+<header>
+    <h1>We Offer Treks In These Regions</h1>
+
+</header>
+
+<main>
+
+
+    <ul>
+        <li th:each="region: ${regions}"><a th:href="@{/region(id=${region.id})}"><p th:text="${region.id}"></p></a>
+        </li>
+
+    </ul>
+</main>
+<footer>
+    <small>&copy Jacker enterprices 2021</small>
+</footer>

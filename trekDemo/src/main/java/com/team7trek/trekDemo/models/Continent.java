@@ -17,6 +17,10 @@ public class Continent {
     @OneToMany(mappedBy = "continent")
     private Collection<Trek> treks;
 
+    public Continent(String north_america, String title, String img) {
+
+    }
+
     public Long getId() {
         return id;
     }

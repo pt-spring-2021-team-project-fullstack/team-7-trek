@@ -32,9 +32,9 @@ public class JPAWiringTest {
     public void ContinentShouldHaveAListTreks() {
         Continent testContinent = new Continent("Test Location");
         Continent testContinent2 = new Continent("Test Location2");
-        Region testRegion1 = new Region("Test climate");
-        Trek testTrek = new Trek("Title", "Difficulty", "Description", testContinent, "Review", testRegion1);
-        Trek testTrek2 = new Trek("Title", "Difficulty", "Description", testContinent2, "Review", testRegion1);
+        Region testRegion1 = new Region("Test climate","image");
+        Trek testTrek = new Trek("Title", "Difficulty", "Description",  "Review","image",testContinent, testRegion1);
+        Trek testTrek2 = new Trek("Title", "Difficulty", "Description",  "Review","image",testContinent2, testRegion1);
 
         continentRepo.save(testContinent);
         continentRepo.save(testContinent2);

@@ -16,10 +16,39 @@ public class Trek {
     private String difficulty;
     private String description;
     private String review;
+    private String image;
     @ManyToOne
     private Continent continent;
     @ManyToMany
     private Collection<Region> regions;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDifficulty() {
+        return difficulty;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getReview() {
+        return review;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public Continent getContinent() {
+        return continent;
+    }
+
+    public Collection<Region> getRegions() {
+        return regions;
+    }
 
     public Long getId() {
     return id;
@@ -27,12 +56,13 @@ public class Trek {
     public Trek() {
 
     }
-    public Trek(String title, String difficulty, String description, Continent continent, String review, Region...regions) {
+    public Trek(String title, String difficulty, String description, String review,String image,Continent continent, Region...regions) {
         this.title = title;
         this.description = description;
         this.difficulty = difficulty;
         this.continent = continent;
         this.review = review;
+        this.image = image;
         this.regions = new ArrayList<>(Arrays.asList(regions));
     }
 

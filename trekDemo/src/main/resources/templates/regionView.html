@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${region.climate}"> Region</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <h1 th:text="${region.climate}"> Region</h1>
+</header>
+<div class="container">
+
+    <main>
+        <img th:src="${region.image}">
+        <p><a href="/regions">Regions</a></p>
+        <ul>
+
+            <li th:text="${region.climate}"></li>
+        </ul>
+
+
+    </main>
+</div>
+<footer>
+    <small>&copy Jacker enterprices 2021</small>
+</footer>
+
+</body>
+</html>

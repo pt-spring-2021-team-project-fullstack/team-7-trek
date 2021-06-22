@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${trekTitle.title}"> Trek</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <h1 th:text="${trekTitle.title}"> Trek</h1>
+</header>
+<div class="container">
+
+    <main>
+        <img th:src="${trekTitle.image}">
+        <p><a href="/treks">Treks</a></p>
+        <ul>
+
+            <li th:text="${trekTitle.title}"></li>
+        </ul>
+        <h2 th:text="${trekTitle.description}"></h2>
+
+    </main>
+</div>
+<footer>
+    <small>&copy Jacker enterprices 2021</small>
+</footer>
+
+</body>
+</html>
