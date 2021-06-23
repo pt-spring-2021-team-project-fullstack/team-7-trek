@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html xmlns ="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Continent</title>
 </head>
 <body>
-<h1>Welcome to we can Trek!</h1>
+<h1>Continent</h1>
 
 <div th:each="continent: ${continent}">
     <main>
         <img th:src="${continent.image}">
-
         <p th:text="'Continent Name: ' + ${continent.title}"></p>
+        <p th:text="'Location: ' + ${continent.location}">
     </main>
-    <footer>
-        <small>&copy JacKer enterprises 2021</small>
-    </footer>
+</div>
+<footer>
+    <small>&copy JacKer enterprises 2021</small>
+</footer>
 </div>
 </body>
 </html>

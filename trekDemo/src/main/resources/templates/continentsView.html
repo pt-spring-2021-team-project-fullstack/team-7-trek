@@ -27,8 +27,8 @@
 <div th:each="continent: ${continents}">
     <main>
         <img th:src="${continent.image}">
-
         <p th:text="'Continent Name: ' + ${continent.title}"></p>
+        <p th:text="'Location: ' + ${continent.location}">
     </main>
 </div>
 <footer>
