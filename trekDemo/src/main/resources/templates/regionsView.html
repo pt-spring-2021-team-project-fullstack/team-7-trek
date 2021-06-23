@@ -8,10 +8,17 @@
     <title>Regions</title>
 </head>
 <body>
+<div th:each="region: ${regions}">
+    <main>
+        <img th:src="${region.image}">
 
-<h1 th:text="${region.title}">Regions</h1>
+        <p th:text="'Region Name: ' + ${region.title}"></p>
+    </main>
+    <footer>
+        <small>&copy JacKer enterprises 2021</small>
+    </footer>
+</div>
 
-<h1>Regions</h1>
 
 </body>
 </html>

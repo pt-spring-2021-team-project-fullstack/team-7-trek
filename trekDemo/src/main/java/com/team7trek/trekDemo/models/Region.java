@@ -36,7 +36,13 @@ public class Region {
     private String image;
     private String title;
 
+    public String getImage() {
+        return image;
+    }
 
+    public String getTitle() {
+        return title;
+    }
 
     public Long getId() {
         return id;

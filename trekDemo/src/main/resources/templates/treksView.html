@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Treks</title>
 </head>
 <body>
 <h1>Treks</h1>
+
+<div th:each="trek: ${treks}">
+    <main>
+        <img th:src="${trek.image}">
+
+        <p th:text="'Trek Name: ' + ${trek.title}"></p>
+    </main>
+    <footer>
+        <small>&copy JacKer enterprises 2021</small>
+    </footer>
+</div>
+
+
 </body>
 </html>
