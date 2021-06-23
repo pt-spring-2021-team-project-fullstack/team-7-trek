@@ -1,64 +1,49 @@
 package com.team7trek.trekDemo.models;
 
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Objects;
 
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-
 @Entity
 public class Region {
     @Id
     @GeneratedValue
     private Long id;
+    private String title;
     private String climate;
-
+    private String image;
     @ManyToOne
     private Continent continent;
     @OneToMany(mappedBy = "region")
     private Collection<Trek> treks;
     public Region(){}
-    public Region(String title, String image, String climate,Continent continent,Trek... treks) {
+    public Region(String title,String climate, String image, Continent continent,Trek... treks) {
         this.continent = continent;
         this.treks = new ArrayList<>(Arrays.asList(treks));
         this.title = title;
-        this.image = image;
         this.climate = climate;
+        this.image = image;
     }
-
-    private String image;
-    private String title;
-
-    public String getImage() {
-        return image;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
     public Long getId() {
         return id;
     }
-
+    public String getTitle() {
+        return title;
+    }
     public String getClimate() {
         return climate;
     }
-
+    public String getImage() {
+        return image;
+    }
     public Collection<Trek> getTreks(){
         return treks;
     }
     public Continent getContinent() {
         return continent;
 }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-
-<html xmlns:th="http://www.thymeleaf.org">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <title>Continent</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-    <title>Title</title>
-
 <body>
-<h1 th:text="${continent.location}"></h1>
+<header>
+    <h1 th:text ="${continent.title}">Continent</h1>
+</header>
 
-
+<footer>
+    <small>&copy JacKer enterprises 2021</small>
+</footer>
 </body>
 </html>

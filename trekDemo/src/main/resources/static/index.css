@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+html {
+    color: black;
+    font: 18px sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.main {
+    background-color: #ECE3D3;
+    padding: 3rem;
+    max-width: 60rem;
+    margin: auto;
+    width: 90%;
+}
+
+.main__welcome_header {
+    font-size: 2rem;
+    padding-top: 6rem;
+    text-align: center;
+}
+
+.main__welcome_text {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.main__section_header {
+    text-align: center;
+}
+
+.main__section_difficulty {
+    text-align: center;
+    margin: auto;
+}
+
+.main__button_type {
+    border: solid #333 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    width: 10rem;
+}
+
+.main__button_type a {
+    color: black;
+    display: block;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.main__button_type:hover {
+    background-color: #576C31;
+    transition: .3s;
+}
+
+.main__button_type a:hover {
+    color: white;
+    transition: .3s;
+}
+
+.main__between_section {
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+}
+
+.main__continent_header {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.main__section_map {
+    display: grid;
+    grid-template-columns: 40.7% auto 41.15%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    text-align: center;
+}
+
+.main__map_column {
+    position: relative;
+}
+
+.main__map_columnAll {
+    position: relative;
+}
+
+.main__column_overlay {
+    position: absolute;
+    bottom: 25%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 15px;
+    padding: 8px 0 8px 0;
+    text-align: center;
+}
+
+.main__map_column:hover .main__column_overlay {
+    opacity: 1;
+}
+
+.main__map_columnAll:hover .main__column_overlay {
+    opacity: 1;
+}
+
+.map_image {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main__map_columnAll {
+    grid-column: 1/4;
+}
+
+@media (max-width: 500px) {
+
+    .main__map_column {
+        opacity: 0.0;
+    }
+
+    .main__map_columnAll {
+        opacity: 0.0;
+    }
+
+    .main__continent_header {
+        margin-bottom: 1rem;
+    }
+
+    .main__section_continents {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .main__button_continent {
+        border: solid #333 2px;
+        border-radius: 15px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 1rem;
+        width: 10rem;
+    }
+    
+    .main__button_continent a {
+        color: black;
+        display: block;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 16px;
+        padding: 1rem;
+        text-decoration: none;
+    }
+    
+    .main__button_continent:hover {
+        background-color: #576C31;
+        transition: .3s;
+    }
+    
+    .main__button_continent a:hover {
+        color: white;
+        transition: .3s;
+    }
+}
+
+@media (min-width: 500px) {
+    .main__section_continents {
+        opacity: 0.0;
+    }
+}
+
+@media (max-width: 870px) {
+
+    .main__section_difficulty {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        text-align: center;
+    }
+
+}

@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html xmlns ="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Region</title>
+
 </head>
+
 <body>
-<h1 th:text="${region.title}">Region</h1>
+<h1>Region</h1>
+
+<div th:each="region: ${region}">
+    <main>
+        <img th:src="${region.image}">
+
+        <p th:text="'Region Name: ' + ${region.title}"></p>
+    </main>
+</div>
+<footer>
+    <small>&copy JacKer enterprises 2021</small>
+</footer>
 </body>
 </html>

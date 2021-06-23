@@ -2,12 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Treks</title>
+    <title>Trek</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<h1>Welcome to we can Trek!</h1>
-
-
+<header>
+    <h1 th:text="${trek.title}"> Trek</h1>
+</header>
+<div class="container">
+    <main>
+        <img th:src="${trek.image}">
+        <p><a href="/treks">Treks</a></p>
+        <ul>
+            <li th:text="${trek.title}"></li>
+        </ul>
+        <h2 th:text="${trek.description}"></h2>
+    </main>
+</div>
+<footer>
+    <small>&copy JacKer enterprises 2021</small>
+</footer>
 </body>
 </html>
