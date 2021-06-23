@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +17,23 @@
         <li class="header__nav_listItem"><a href="/continents">Continents</a></li>
         <li class="header__nav_listItem"><a href="/regions">Regions</a></li>
         <li class="header__nav_listItem"><a href="/treks">Treks</a></li>
-        <li class="header__nav_listItem"><a href="about.html">About Us</a></li>
+        <li class="header__nav_listItem"><a href="/about.html">About Us</a></li>
       </ul>
     </header>
+    </head>
   </div>
-</head>
+
 <body>
-<h1>Continents</h1>
+<h1>Welcome to we can Trek!</h1>
+<div th:each="trek: ${treks}">
+  <main>
+    <img th:src="${trek.image}">
+
+    <p th:text="'Trek Name: ' + ${trek.title}"></p>
+  </main>
+</div>
+<footer>
+  <small>&copy JacKer enterprises 2021</small>
+</footer>
 </body>
 </html>
