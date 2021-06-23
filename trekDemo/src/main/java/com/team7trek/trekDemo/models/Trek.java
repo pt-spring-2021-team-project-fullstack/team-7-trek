@@ -35,6 +35,9 @@ public class Trek {
         this.region = regions;
     }
 
+    public Region getRegion() {
+        return region;
+    }
 
     public Region getRegions(){
         return region;
