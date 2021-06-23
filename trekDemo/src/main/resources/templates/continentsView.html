@@ -22,14 +22,13 @@
         </header>
 </head>
     </div>
-
+  
 <body>
 <div th:each="continent: ${continents}">
     <main>
         <img th:src="${continent.image}">
 
-
-        <p th:text="'Continent Name: ' + ${continent.location}"></p>
+        <p th:text="'Continent Name: ' + ${continent.title}"></p>
     </main>
 </div>
 <footer>
