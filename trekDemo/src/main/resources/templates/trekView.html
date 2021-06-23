@@ -8,15 +8,16 @@
 <body>
 <header>
     <h1 th:text="${trek.title}"> Trek</h1>
+    <p><a href="/treks">Back to Treks list</a></p>
 </header>
 <div class="container">
     <main>
-        <img th:src="${trek.image}">
-        <p><a href="/treks">Treks</a></p>
+        <img th:src="${trek.image}" class="trek-view-image">
         <ul>
             <li th:text="${trek.title}"></li>
         </ul>
         <h2 th:text="${trek.description}"></h2>
+        <h3 th:text="${trek.difficulty}"></h3>
     </main>
 </div>
 <footer>

@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html xmlns ="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-
 </head>
-
 <body>
 <h1>Region</h1>
-
 <div th:each="region: ${region}">
     <main>
         <img th:src="${region.image}">
-
         <p th:text="'Region Name: ' + ${region.title}"></p>
     </main>
 </div>

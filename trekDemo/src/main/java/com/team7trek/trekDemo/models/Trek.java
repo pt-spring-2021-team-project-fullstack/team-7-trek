@@ -12,8 +12,11 @@ public class Trek {
     @GeneratedValue
     private Long id;
     private String title;
+    @Lob
     private String difficulty;
+    @Lob
     private String description;
+    @Lob
     private String review;
     private String image;
     @ManyToOne
@@ -29,11 +32,9 @@ public class Trek {
     public String getDifficulty() {
         return difficulty;
     }
-    @Lob
     public String getDescription() {
         return description;
     }
-    @Lob
     public String getReview() {
         return review;
     }
