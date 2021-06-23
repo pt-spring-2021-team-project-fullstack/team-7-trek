@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b7c60d8-4ed8-4f66-9d07-1e94f2054101" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/team-7-trek - Copy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/team-7-trek.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/Populator.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/Populator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/ContinentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/ContinentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/RegionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/RegionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/TrekController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/TrekController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Continent.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Continent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Trek.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Trek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/repositories/ContinentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/repositories/ContinentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentsView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentsView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionsView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionsView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/treksView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/treksView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/test/java/com/team7trek/trekDemo/JPAWiringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/test/java/com/team7trek/trekDemo/JPAWiringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/test/java/com/team7trek/trekDemo/WebLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/test/java/com/team7trek/trekDemo/WebLayerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/trekDemo">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1uKNQFcI2IM4m9pfZ1TTtv2GHPe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.TrekDemoApplication">
+    <configuration name="TrekDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.team7trek.trekDemo.TrekDemoApplication" />
+      <module name="trekDemo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team7trek.trekDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests in 'trekDemo.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/trekDemo" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TrekDemoApplication" />
+        <item itemvalue="Gradle.Tests in 'trekDemo.test'" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b7c60d8-4ed8-4f66-9d07-1e94f2054101" name="Default Changelist" comment="" />
+      <created>1624410303301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624410303301</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -13,12 +13,8 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-
-
 @DataJpaTest
-public class JPAWiringTest {
-
-
+public class JPAWiringTest  {
     @Autowired
     private TestEntityManager entityManager;
     @Autowired
@@ -27,34 +23,27 @@ public class JPAWiringTest {
     private RegionRepository regionRepo;
     @Autowired
     private TrekRepository trekRepo;
-
-@Test
+    @Test
     public void continentShouldHaveAListOfRegions() {
-    Continent testContinent = new Continent("Test Location", "title", "image");
-    Continent testContinent2 = new Continent("Test Location2", "title", "image");
-    Region testRegion1 = new Region("Test title", "Test image", "Test climate", testContinent);
-    Trek testTrek = new Trek("Test title", "Test difficulty", "Test description", "Test review", "Test image", testContinent, testRegion1);
-    Trek testTrek2 = new Trek("Test title", "Test difficulty", "Test description", "Test review", "Test image", testContinent2, testRegion1);
-
-    continentRepo.save(testContinent);
-    continentRepo.save(testContinent2);
-    regionRepo.save(testRegion1);
-    trekRepo.save(testTrek);
-    trekRepo.save(testTrek2);
-
-    entityManager.flush();
-    entityManager.clear();
-
-    Optional<Continent> retrievedContinentOpt = continentRepo.findById(testContinent.getId());
-    Continent retrievedContinent = retrievedContinentOpt.get();
-    assertThat(retrievedContinent.getRegions()).contains(testRegion1);
-}
-
-
-
+        Continent testContinent = new Continent("Test Location1","title","image");
+        Continent testContinent2 = new Continent("Test Location2","title","image");
+        Region testRegion1 = new Region("Test title","Test climate","Test image",testContinent);
+        Trek testTrek = new Trek("Test title","Test difficulty","Test description","Test review","Test image", testContinent,testRegion1);
+        Trek testTrek2 = new Trek("Test title","Test difficulty","Test description","Test review","Test image", testContinent2,testRegion1);
+        continentRepo.save(testContinent);
+        continentRepo.save(testContinent2);
+        regionRepo.save(testRegion1);
+        trekRepo.save(testTrek);
+        trekRepo.save(testTrek2);
+        entityManager.flush();
+        entityManager.clear();
+        Optional<Continent> retrievedContinentOpt = continentRepo.findById(testContinent.getId());
+        Continent retrievedContinent = retrievedContinentOpt.get();
+        assertThat(retrievedContinent.getRegions()).contains(testRegion1);
+    }
     @Test
     public void regionsShouldHaveMultipleTreks() {
-        Continent testContinent = new Continent("Test Location","title","image");
+        Continent testContinent = new Continent("Test Location1","title","image");
         Continent testContinent2 = new Continent("Test Location2","title","image");
         Region testRegion1 = new Region("Test title","Test image","Test climate",testContinent);
         Trek testTrek1 = new Trek("Test title","Test difficulty","Test description","Test review","Test image", testContinent,testRegion1);
@@ -72,6 +61,3 @@ public class JPAWiringTest {
         assertThat(retrievedRegion.getTreks()).contains(testTrek1,testTrek2);
     }
 }
-
-
-

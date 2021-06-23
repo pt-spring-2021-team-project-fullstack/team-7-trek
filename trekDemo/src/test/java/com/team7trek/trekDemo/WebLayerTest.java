@@ -1,5 +1,4 @@
 package com.team7trek.trekDemo;
-
 import com.team7trek.trekDemo.models.Continent;
 import com.team7trek.trekDemo.repositories.ContinentRepository;
 import com.team7trek.trekDemo.repositories.RegionRepository;
@@ -11,18 +10,13 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
-
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
-
-
-
-
 @ExtendWith(SpringExtension.class)
+
 @WebMvcTest
 public class WebLayerTest {
     @MockBean
@@ -33,7 +27,6 @@ public class WebLayerTest {
     private TrekRepository trekRepo;
     @Autowired
     private MockMvc mockMvc;
-
     @Test
     public void continentsShouldBeOkAndReturnContinentsViewWithContinentsModelAttribute() throws Exception {
         mockMvc.perform(get("/continents"))
@@ -49,7 +42,6 @@ public class WebLayerTest {
                 .andExpect(status().isOk())
                 .andExpect(view().name("regionsView"))
                 .andExpect(model().attributeExists("regions"));
-
     }
     @Test
     public void treksShouldBeOkAndReturnTreksViewWithTreksModelAttribute() throws Exception {
@@ -58,7 +50,6 @@ public class WebLayerTest {
                 .andExpect(status().isOk())
                 .andExpect(view().name("treksView"))
                 .andExpect(model().attributeExists("treks"));
-
     }
     @Test
     public void shouldBeOkForASingleContinentEndPointWithContinentViewAndContinentModelAttribute() throws Exception {
@@ -68,8 +59,5 @@ public class WebLayerTest {
                 .andExpect(status().isOk())
                 .andExpect(view().name("continentView"))
                 .andExpect(model().attributeExists("continent"));
-
-
     }
-
 }

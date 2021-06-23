@@ -19,34 +19,25 @@ public class Continent {
     public Continent() {}
     public Continent(String location,String title,String image, Region... regions) {
         this.regions = new ArrayList<>(Arrays.asList(regions));
+        this.location = location;
         this.title = title;
         this.image = image;
-        this.location = location;
     }
     public Long getId() {
         return id;
     }
-
-    public Collection<Region> getRegions() {
-        return regions;
-    }
-
-
     public String getLocation() {
         return location;
     }
-
+    public Collection<Region> getRegions() {
+        return regions;
+    }
     public String getTitle() {
         return title;
     }
-
     public String getImage() {
         return image;
     }
-
-
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

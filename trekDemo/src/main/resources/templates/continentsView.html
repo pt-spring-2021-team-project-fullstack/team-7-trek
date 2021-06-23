@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-
-<html
-        xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-
+<html xmlns ="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Continents</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ultimate Adventure Treks</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="index.css">
+    <div class="container">
+        <header class="header">
+            <a href="http://localhost:8080/"><h1 class="header__title">Ultimate Adventure Treks</h1></a>
+            <input class="header__menu_btn" type="checkbox" id="header__menu_btn"/>
+            <label class="header__menu_icon" for="header__menu_btn"><span class="header__nav_icon"></span></label>
+            <ul class="header__nav_list">
+                <li class="header__nav_listItem"><a href="/continents">Continents</a></li>
+                <li class="header__nav_listItem"><a href="/regions">Regions</a></li>
+                <li class="header__nav_listItem"><a href="/treks">Treks</a></li>
+                <li class="header__nav_listItem"><a href="/templates/about.html">About Us</a></li>
+            </ul>
+        </header>
 </head>
+    </div>
+
 <body>
-<header class="continent--header" th:text="${continent.location}"></header>
+<div th:each="continent: ${continents}">
+    <main>
+        <img th:src="${continent.image}">
 
-<h2 ><a >Continent</a></h2>
 
-
+        <p th:text="'Continent Name: ' + ${continent.location}"></p>
+    </main>
+</div>
+<footer>
+    <small>&copy JacKer enterprises 2021</small>
+</footer>
 </body>
 </html>
