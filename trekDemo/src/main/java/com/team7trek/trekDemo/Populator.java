@@ -62,7 +62,7 @@ public class Populator implements CommandLineRunner {
         regionRepo.save(australia1);
         regionRepo.save(australia2);
         Trek na1 = new Trek("Bike","difficulty","description","review","image",northAmerica,northAmerica1);
-        Trek na2 = new Trek("title2","difficulty","description","review","image",northAmerica,northAmerica1);
+        Trek na2 = new Trek("Boat","difficulty","description","review","image",northAmerica,northAmerica1);
         Trek na3 = new Trek("title3","difficulty","description","review","image",northAmerica,northAmerica2);
         Trek na4 = new Trek("title4","difficulty","description","review","image",northAmerica,northAmerica2);
         Trek sa1 = new Trek("title1","difficulty","description","review","image",southAmerica,southAmerica1);

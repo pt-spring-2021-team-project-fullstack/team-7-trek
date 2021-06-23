@@ -8,8 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/Populator.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/Populator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentsView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentsView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionsView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionsView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/trekView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/trekView.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
