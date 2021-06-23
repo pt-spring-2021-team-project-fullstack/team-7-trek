@@ -5,28 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b7c60d8-4ed8-4f66-9d07-1e94f2054101" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/team-7-trek - Copy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/team-7-trek.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/africa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/africa1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/asia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/asia1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/desert.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/desert1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/eu1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/eu2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/mountain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/na.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/na2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/peace.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/sa1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/sa2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/snow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/snow2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/images/trees.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/Populator.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/Populator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/ContinentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/ContinentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/RegionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/RegionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/TrekController.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/controllers/TrekController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Continent.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Continent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Region.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Trek.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Trek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/repositories/ContinentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/repositories/ContinentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentsView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentsView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionsView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionsView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/treksView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/treksView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/test/java/com/team7trek/trekDemo/JPAWiringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/test/java/com/team7trek/trekDemo/JPAWiringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/test/java/com/team7trek/trekDemo/WebLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/test/java/com/team7trek/trekDemo/WebLayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/trekDemo/src/main/resources/static/images" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\j_tuc\wcci\team-7-trek\trekDemo\src\main\resources\static\images" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.TrekDemoApplication">
     <configuration name="TrekDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

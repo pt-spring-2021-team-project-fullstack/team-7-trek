@@ -19,13 +19,13 @@ public class Populator implements CommandLineRunner {
     private RegionRepository regionRepo;
     @Override
     public void run(String... args) throws Exception {
-        Continent northAmerica = new Continent("North America","title","img");
-        Continent southAmerica = new Continent("South America","title","image");
-        Continent europe = new Continent("Europe","title","image");
-        Continent asia = new Continent("Asia","title","image");
-        Continent antarctica = new Continent("Antarctica","title","image");
-        Continent africa = new Continent("Africa","title","image");
-        Continent australia = new Continent("Australia","title","image");
+        Continent northAmerica = new Continent("North America","title","/images/na.jpg");
+        Continent southAmerica = new Continent("South America","title","/images/sa2.jpg");
+        Continent europe = new Continent("Europe","title","/images/eu1.jpg");
+        Continent asia = new Continent("Asia","title","/images/asia.jpg");
+        Continent antarctica = new Continent("Antarctica","title","/images/snow2.jpg");
+        Continent africa = new Continent("Africa","title","/images/africa.jpg");
+        Continent australia = new Continent("Australia","title","/images/peace.jpg");
         continentRepo.save(northAmerica);
         continentRepo.save(southAmerica);
         continentRepo.save(europe);
