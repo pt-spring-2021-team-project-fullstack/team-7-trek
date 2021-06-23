@@ -19,13 +19,13 @@ public class Populator implements CommandLineRunner {
     private RegionRepository regionRepo;
     @Override
     public void run(String... args) throws Exception {
-        Continent northAmerica = new Continent("United States","North America","/images/na.jpg");
-        Continent southAmerica = new Continent("Brazil","South America","/images/sa2.jpg");
-        Continent europe = new Continent("Italy","Europe","/images/eu1.jpg");
-        Continent asia = new Continent("China","Asia","/images/asia.jpg");
-        Continent antarctica = new Continent("Antarctica","Antarctica","/images/snow2.jpg");
-        Continent africa = new Continent("Ghana","Africa","/images/africa.jpg");
-        Continent australia = new Continent("Syndey","Australia","/images/peace.jpg");
+        Continent northAmerica = new Continent("North America","/images/na.jpg");
+        Continent southAmerica = new Continent("South America","/images/sa2.jpg");
+        Continent europe = new Continent("Europe","/images/eu1.jpg");
+        Continent asia = new Continent("Asia","/images/asia.jpg");
+        Continent antarctica = new Continent("Antarctica","/images/snow2.jpg");
+        Continent africa = new Continent("Africa","/images/africa.jpg");
+        Continent australia = new Continent("Australia","/images/peace.jpg");
         continentRepo.save(northAmerica);
         continentRepo.save(southAmerica);
         continentRepo.save(europe);
@@ -61,11 +61,11 @@ public class Populator implements CommandLineRunner {
         regionRepo.save(africa2);
         regionRepo.save(australia1);
         regionRepo.save(australia2);
-        Trek na1 = new Trek("Bike","difficulty","description","review","image",northAmerica,northAmerica1);
-        Trek na2 = new Trek("Boat","difficulty","description","review","image",northAmerica,northAmerica1);
-        Trek na3 = new Trek("title3","difficulty","description","review","image",northAmerica,northAmerica2);
-        Trek na4 = new Trek("title4","difficulty","description","review","image",northAmerica,northAmerica2);
-        Trek sa1 = new Trek("title1","difficulty","description","review","image",southAmerica,southAmerica1);
+        Trek na1 = new Trek("Bike","difficulty","description","review","/images/killerkayaking.jpg",northAmerica,northAmerica1);
+        Trek na2 = new Trek("Boat","difficulty","description","review","/images/killerkayaking.jpg",northAmerica,northAmerica1);
+        Trek na3 = new Trek("title3","difficulty","description","review","/images/killerkayaking.jpg",northAmerica,northAmerica2);
+        Trek na4 = new Trek("title4","difficulty","description","review","/images/killerkayaking.jpg",northAmerica,northAmerica2);
+        Trek sa1 = new Trek("title1","difficulty","description","review","/images/killerkayaking.jpg",southAmerica,southAmerica1);
         Trek sa2 =new Trek("title2","difficulty","description","review","image",southAmerica,southAmerica1);
         Trek sa3 = new Trek("title3","difficulty","description","review","image",southAmerica,southAmerica2);
         Trek sa4 = new Trek("title4","difficulty","description","review","image",southAmerica,southAmerica2);

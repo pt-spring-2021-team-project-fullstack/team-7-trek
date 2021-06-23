@@ -53,8 +53,8 @@ public class WebLayerTest {
     }
     @Test
     public void shouldBeOkForASingleContinentEndPointWithContinentViewAndContinentModelAttribute() throws Exception {
-        Continent testContinent = new Continent("Africa","title","image");
-        when(continentRepo.findContinentByLocation("Africa")).thenReturn(testContinent);
+        Continent testContinent = new Continent("Africa","image");
+        when(continentRepo.findContinentByTitle("Africa")).thenReturn(testContinent);
         mockMvc.perform(get("/continents/Africa"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("continentView"))

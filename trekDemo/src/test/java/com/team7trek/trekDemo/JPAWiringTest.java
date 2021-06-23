@@ -25,8 +25,8 @@ public class JPAWiringTest  {
     private TrekRepository trekRepo;
     @Test
     public void continentShouldHaveAListOfRegions() {
-        Continent testContinent = new Continent("Test Location1","title","image");
-        Continent testContinent2 = new Continent("Test Location2","title","image");
+        Continent testContinent = new Continent("title1","image");
+        Continent testContinent2 = new Continent("title2","image");
         Region testRegion1 = new Region("Test title","Test climate","Test image",testContinent);
         Trek testTrek = new Trek("Test title","Test difficulty","Test description","Test review","Test image", testContinent,testRegion1);
         Trek testTrek2 = new Trek("Test title","Test difficulty","Test description","Test review","Test image", testContinent2,testRegion1);
@@ -43,8 +43,8 @@ public class JPAWiringTest  {
     }
     @Test
     public void regionsShouldHaveMultipleTreks() {
-        Continent testContinent = new Continent("Test Location1","title","image");
-        Continent testContinent2 = new Continent("Test Location2","title","image");
+        Continent testContinent = new Continent("title1","image");
+        Continent testContinent2 = new Continent("title2","image");
         Region testRegion1 = new Region("Test title","Test image","Test climate",testContinent);
         Trek testTrek1 = new Trek("Test title","Test difficulty","Test description","Test review","Test image", testContinent,testRegion1);
         Trek testTrek2 = new Trek("Test title","Test difficulty","Test description","Test review","Test image", testContinent2,testRegion1);
