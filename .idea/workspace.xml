@@ -7,10 +7,9 @@
     <list default="true" id="2b7c60d8-4ed8-4f66-9d07-1e94f2054101" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/Populator.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/Populator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Trek.java" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/java/com/team7trek/trekDemo/models/Trek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/static/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/static/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/regionView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/trekView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/trekView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentsView.html" beforeDir="false" afterPath="$PROJECT_DIR$/trekDemo/src/main/resources/templates/continentsView.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
