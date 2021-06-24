@@ -4,32 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ultimate Adventure Treks</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="index.css">
-  <div class="container">
-    <header class="header">
-      <a href="http://localhost:8080/"><h1 class="header__title">Ultimate Adventure Treks</h1></a>
-      <input class="header__menu_btn" type="checkbox" id="header__menu_btn"/>
-      <label class="header__menu_icon" for="header__menu_btn"><span class="header__nav_icon"></span></label>
-      <ul class="header__nav_list">
-        <li class="header__nav_listItem"><a href="/continents">Continents</a></li>
-        <li class="header__nav_listItem"><a href="/regions">Regions</a></li>
-        <li class="header__nav_listItem"><a href="/treks">Treks</a></li>
-        <li class="header__nav_listItem"><a href="/about.html">About Us</a></li>
-      </ul>
-    </header>
-    </head>
-  </div>
-
 <body>
 <h1>Welcome to we can Trek!</h1>
-<div th:each="trek: ${treks}">
-  <main>
-    <img th:src="${trek.image}">
-
-    <p th:text="'Trek Name: ' + ${trek.title}"></p>
+<div>
+  <a href="/continents">Go Back Home</a></li>
   </main>
 </div>
 <footer>

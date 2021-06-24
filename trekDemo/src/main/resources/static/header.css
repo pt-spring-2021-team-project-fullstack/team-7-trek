@@ -30,7 +30,7 @@ header a {
 .header__nav_listItem a {
     display: block;
     padding: 20px 20px;
-    border-right: 1px solid #f4f4f4; /*may not want */
+    border-right: 1px solid #f4f4f4;
     letter-spacing: 1px;
     text-decoration: none;
 }
@@ -140,5 +140,25 @@ header a {
     }
 }
 
-@media (min-width: 651px) {
+.continent{
+height: 100%;
+display: grid;
+grid-gap:3px;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: 40px auto 40px;
+grid-template-area:
+". . i i . ."
+". . c c . ."
+". . f f . .";
+}
+.continent--content{
+grid-area: c;
+}
+footer{
+grid-area: f;
+bottom: 0;
+}
+.img {
+grid-area: i;
+}
 
